@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentify</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="login-section" class="form-section">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="text" id="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="phone" placeholder="Phone Number" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <div id="seller-section" class="form-section">
+        <h2>Post Property</h2>
+        <form id="property-form">
+          <input type="text" id="place" placeholder="Place" required />
+          <input type="text" id="area" placeholder="Area (sq ft)" required />
+          <input type="number" id="bedrooms" placeholder="Bedrooms" required />
+          <input
+            type="number"
+            id="bathrooms"
+            placeholder="Bathrooms"
+            required
+          />
+          <input
+            type="text"
+            id="nearby"
+            placeholder="Hospitals & Colleges Nearby"
+            required
+          />
+          <button type="submit">Post Property</button>
+        </form>
+        <div id="posted-properties">
+          <h3>Your Properties</h3>
+          <ul id="property-list"></ul>
+        </div>
+      </div>
+
+      <div id="buyer-section">
+        <h2>Available Properties</h2>
+        <div id="filter-section">
+          <input type="text" id="filter-place" placeholder="Filter by Place" />
+          <button id="apply-filters">Apply Filters</button>
+        </div>
+        <ul id="available-properties"></ul>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
